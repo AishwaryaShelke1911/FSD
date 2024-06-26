@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+       <center> <h1>Login Form</h1>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            {% load static %}
+            {{ form.as_p }}
+<!--
+                <div class="container">
+                    <div class="imgcontainer">
+                        <img src = "{% static 'myapp/avatar_img1.jpg' %}" width="200px" alt="Avatar">
+                    </div>
+                    <label for="email"><b>User Email: </b></label>
+                    <input type="email" placeholder="Enter your email" float="right" name="email" required><br>
+                    <label for="password"><b>Password: </b></label>
+                    <input type="password" placeholder="Enter your password" float="right" name="password" required><br>
+                </div>
+            -->
+                    <button type="submit"><b>Login</b></button>
+                    <p>Don't have an account? <a href="http://localhost:8000/signup/">Signup</a></p>
+                
+            </center>
+        </form>
+    </body>
+</html>
